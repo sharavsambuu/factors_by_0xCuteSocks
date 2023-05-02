@@ -75,7 +75,7 @@ def sell_increasing(depth, trade, n=100):
 
 @nb.jit
 def first_location_of_maximum(x):
-    max_value=max(x)#一个for 循环
+    max_value=max(x)
     for loc in range(len(x)):
         if x[loc]==max_value:
             return loc+1
